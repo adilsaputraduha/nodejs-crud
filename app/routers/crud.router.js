@@ -7,7 +7,7 @@ const {
 router.get('/mahasiswa', mahasiswa.getDataMahasiswa);
 
 // Ambil data semua mahasiswa berdasarkan id = 2
-router.get('/mahasiswa/:id', mahasiswa.getDataMahasiswaByID);
+router.get('/mahasiswa/:nobp', mahasiswa.getDataMahasiswaById);
 
 // Tambah data mahasiswa ke database
 router.post('/mahasiswa/add', mahasiswa.addDataMahasiswa);
