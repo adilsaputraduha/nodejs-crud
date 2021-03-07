@@ -11,7 +11,7 @@ router.get("/mahasiswa/:nobp", mahasiswa.getDataMahasiswaById);
 router.post("/mahasiswa/", mahasiswa.addDataMahasiswa);
 
 // Edit data mahasiswa
-router.put("/mahasiswa/edit/:id", mahasiswa.editDataMahasiswa);
+router.post("/mahasiswa/edit/", mahasiswa.editDataMahasiswa);
 
 // Delete data mahasiswa
 router.post("/mahasiswa/delete/", mahasiswa.deleteDataMahasiswa);
