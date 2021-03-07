@@ -4,7 +4,7 @@ const { mahasiswa } = require("../controllers");
 // Ambil data semua mahasiswa
 router.get("/mahasiswa", mahasiswa.getDataMahasiswa);
 
-// Ambil data semua mahasiswa berdasarkan id = 2
+// Ambil data semua mahasiswa berdasarkan id
 router.get("/mahasiswa/:nobp", mahasiswa.getDataMahasiswaById);
 
 // Tambah data mahasiswa ke database
@@ -14,6 +14,6 @@ router.post("/mahasiswa/", mahasiswa.addDataMahasiswa);
 router.put("/mahasiswa/edit/:id", mahasiswa.editDataMahasiswa);
 
 // Delete data mahasiswa
-router.delete("/mahasiswa/delete/:id", mahasiswa.deleteDataMahasiswa);
+router.post("/mahasiswa/delete/", mahasiswa.deleteDataMahasiswa);
 
 module.exports = router;
